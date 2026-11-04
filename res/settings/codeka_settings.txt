@@ -1,0 +1,2 @@
+isCodekaFixedOnScreen:false
+isCodekaInSlowMode:false

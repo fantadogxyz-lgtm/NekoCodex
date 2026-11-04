@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JsonGenerator</class>
+ <widget class="QWidget" name="JsonGenerator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>JsonGenerator</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>870</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(233, 237, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>401</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(251, 252, 255);
+border: 3px solid rgb(163, 163, 243)</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>395</width>
+       <height>345</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="createFieldBut">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton {
+background-color: rgb(170, 170, 255);
+color: rgb(255, 255, 255);
+border-radius:  20px
+}
+QPushButton:hover {
+	
+	background-color: rgb(147, 147, 220);
+}
+QPushButton:pressed {
+	
+	background-color: rgb(119, 125, 199);
+}</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenereteFile">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>420</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton {
+background-color: rgb(170, 170, 255);
+color: rgb(255, 255, 255);
+
+}
+QPushButton:hover {
+	
+	background-color: rgb(147, 147, 220);
+}
+QPushButton:pressed {
+	
+	background-color: rgb(119, 125, 199);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Сгенерировать файл</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenereteText">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>420</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton {
+background-color: rgb(170, 170, 255);
+color: rgb(255, 255, 255);
+
+}
+QPushButton:hover {
+	
+	background-color: rgb(147, 147, 220);
+}
+QPushButton:pressed {
+	
+	background-color: rgb(119, 125, 199);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Сгенерировать текст</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBoxNumberOfRecords">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>20</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* Общий стиль для SpinBox */QSpinBox {
+    padding-right: 24px; /* Освобождаем место справа, чтобы текст и поле НЕ наслаивались на стрелочки */
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    selection-background-color: rgb(111, 111, 166);
+    color: #333333;
+}
+
+/* Кнопка &quot;Вверх&quot; (располагаем в верхнем правом углу) */
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right; 
+    width: 22px;
+    height: 14px; /* Половина высоты с небольшим запасом */
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background: #f5f5f5;
+    border-top-right-radius: 4px;
+}
+
+/* Кнопка &quot;Вниз&quot; (располагаем в нижнем правом углу) */
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 22px;
+    height: 14px;
+    border-left: 1px solid #cccccc;
+    background: #f5f5f5;
+    border-bottom-right-radius: 4px;
+}
+
+/* Стили при наведении на кнопки */
+QSpinBox::up-button:hover, QSpinBox::down-button:hover {
+    background: #e0e0e0;
+}
+
+/* Стили при клике */
+QSpinBox::up-button:pressed, QSpinBox::down-button:pressed {
+    background: #cdcdcd;
+}
+
+/* Отрисовка самих стрелочек внутри кнопок (рисуем встроенными стрелками Qt) */
+QSpinBox::up-arrow {
+    image: url(none); /* Если у тебя есть свои иконки, укажи путь тут */
+    width: 7px;
+    height: 7px;
+}
+
+QSpinBox::up-arrow {
+    image: url(none); /* Отключаем поиск картинки */
+    content: &quot;▲&quot;;     /* Вставляем текстовый треугольник вверх */
+    font-size: 9px;   /* Подбираем размер стрелочки */
+    color: rgb(31, 31, 31);   /* Цвет стрелочки */
+}
+
+QSpinBox::down-arrow {
+    image: url(none); /* Отключаем поиск картинки */
+    content: &quot;▼&quot;;     /* Вставляем текстовый треугольник вниз */
+    font-size: 9px;   /* Подбираем размер стрелочки */
+    color: rgb(31, 31, 31);   /* Цвет стрелочки */
+}
+
+/* Цвет стрелочек при наведении на весь SpinBox (опционально) */
+QSpinBox::up-arrow:hover, QSpinBox::down-arrow:hover {
+    color: #000000;
+}
+
+
+</string>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 170, 255);
+background-color: rgba(255, 255, 255, 0);
+border: none;
+</string>
+    </property>
+    <property name="text">
+     <string>Количество записей:</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>381</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>11</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+border: 5px solid  rgb(170, 170, 255);
+color: rgb(38, 38, 38);</string>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QuickWidg</class>
+ <widget class="QWidget" name="QuickWidg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Панель быстрого доступа /ᐠ｡ꞈ｡ᐟ\</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+   background-color: rgb(170, 170, 255);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+   background-color: rgb(150, 150, 235);
+}
+QPushButton:pressed {
+   background-color: rgb(130, 130, 215);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>381</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background-color: rgb(120, 120, 179);
+   
+	color: rgb(255, 255, 255);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+	background-color: rgb(105, 105, 156);
+}
+QPushButton:pressed {
+	background-color: rgb(92, 84, 138);
+}</string>
+   </property>
+   <property name="text">
+    <string>Редактировать панель</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+   background-color: rgb(173, 230, 228);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+   
+	background-color: rgb(161, 197, 195);
+}
+QPushButton:pressed {
+	background-color: rgb(123, 163, 155);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>10</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+   background-color: rgb(255, 197, 252);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+	background-color: rgb(214, 165, 212);
+}
+QPushButton:pressed {
+	background-color: rgb(179, 120, 181);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+   background-color: rgb(255, 185, 139);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+	background-color: rgb(217, 160, 113);
+}
+QPushButton:pressed {
+	background-color: rgb(184, 131, 84);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>90</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+   background-color: rgb(255, 255, 127);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+	background-color: rgb(221, 213, 103);
+}
+QPushButton:pressed {
+	background-color: rgb(200, 167, 84);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>90</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+   background-color: rgb(126, 170, 212);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+	background-color: rgb(108, 154, 189);
+}
+QPushButton:pressed {
+	background-color: rgb(86, 128, 168);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>170</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+   background-color: rgb(197, 255, 161);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+	background-color: rgb(156, 202, 128);
+}
+QPushButton:pressed {
+	background-color: rgb(140, 181, 102);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+   background-color: rgb(255, 112, 99);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+	background-color: rgb(190, 94, 83);
+}
+QPushButton:pressed {
+	background-color: rgb(170, 84, 74);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>170</y>
+     <width>121</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Yu Gothic UI</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+   background-color: rgb(205, 144, 255);
+   color: rgb(63, 63, 63);
+   qproperty-wordWrap: true;
+}
+QPushButton:hover {
+	background-color: rgb(177, 99, 222);
+}
+QPushButton:pressed {
+	background-color: rgb(125, 70, 157);
+}</string>
+   </property>
+   <property name="text">
+    <string>Не задано</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

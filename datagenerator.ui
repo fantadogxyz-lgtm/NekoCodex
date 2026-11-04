@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataGenerator</class>
+ <widget class="QWidget" name="DataGenerator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DataGenerator</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>870</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(215, 216, 227);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QPlainTextEdit" name="plainTextEditOutput">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>309</y>
+      <width>831</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>14</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 161);
+color: rgb(246, 243, 255);</string>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Здесь будет вывод!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenerateUsername">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+background-color: rgb(160, 157, 204);
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	background-color: rgb(146, 145, 175);
+}
+QPushButton:pressed {
+	
+	background-color: rgb(110, 109, 132);
+}</string>
+    </property>
+    <property name="text">
+     <string>Никнейм</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenerateName">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(60, 60, 90);
+
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	
+	background-color: rgb(76, 71, 106);
+}
+QPushButton:pressed {
+	
+	
+	background-color: rgb(42, 42, 56);
+}</string>
+    </property>
+    <property name="text">
+     <string>Имя</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenerateSurname">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+background-color: rgb(160, 157, 204);
+
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	background-color: rgb(146, 145, 175);
+}
+QPushButton:pressed {
+	
+	background-color: rgb(110, 109, 132);
+}</string>
+    </property>
+    <property name="text">
+     <string>Фамилия</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGeneratePasswordNotEasy">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+background-color: rgb(186, 184, 223);
+
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	background-color: rgb(173, 172, 194);
+}
+QPushButton:pressed {
+	background-color: rgb(133, 132, 150);
+}</string>
+    </property>
+    <property name="text">
+     <string>Пароль</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenerateRandomWord">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+background-color: rgb(186, 184, 223);
+
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	background-color: rgb(173, 172, 194);
+}
+QPushButton:pressed {
+	background-color: rgb(133, 132, 150);
+}</string>
+    </property>
+    <property name="text">
+     <string>Случайное слово</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenerateEmail">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(60, 60, 90);
+
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	background-color: rgb(76, 71, 106);
+}
+QPushButton:pressed {
+	
+	
+	background-color: rgb(42, 42, 56);
+}</string>
+    </property>
+    <property name="text">
+     <string>Почта</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGenerateDate">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>70</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(60, 60, 90);
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	background-color: rgb(76, 71, 106);
+}
+QPushButton:pressed {
+	
+	
+	background-color: rgb(42, 42, 56);
+}</string>
+    </property>
+    <property name="text">
+     <string>Дата</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGeneratePhone">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QPushButton {
+background-color: rgb(160, 157, 204);
+
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	background-color: rgb(146, 145, 175);
+}
+QPushButton:pressed {
+	
+	background-color: rgb(110, 109, 132);
+}</string>
+    </property>
+    <property name="text">
+     <string>Телефон</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>20</y>
+      <width>471</width>
+      <height>280</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>469</width>
+       <height>278</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonDelete">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Yu Gothic UI</family>
+      <pointsize>16</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color: rgb(60, 60, 90);
+
+background-position: center;
+background-repeat: no-repeat;
+}
+QPushButton:hover {
+	
+	
+	background-color: rgb(66, 66, 88);
+}
+QPushButton:pressed {
+	
+	
+	background-color: rgb(42, 42, 56);
+}</string>
+    </property>
+    <property name="text">
+     <string>Очистить</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
