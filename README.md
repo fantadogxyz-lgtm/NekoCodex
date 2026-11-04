@@ -1,43 +1,37 @@
-# NekoCodekaProgHelper
+# NekoCodex — Интерактивный помощник программиста ฅ^•ﻌ•^ฅ
+
+**NekoCodex** - это десктопное приложение для Windows, объединяющее в себе набор инструментов для разработчика и виртуального анимированного компаньона. /ᐠ - ˕ -マ
+
+Проект разработан в рамках курсового проекта по дисциплине «Основы алгоритмизации и программирования». Основная идея - собрать ежедневные утилиты разработчика в одном месте и снизить когнитивную нагрузку за счет геймификации и напоминаний о перерывах.
+
+### Основные возможности: ^•ﻌ•^ฅ♡
+* **Виртуальный компаньон:** анимированный персонаж поверх всех окон, который меняет состояния (ходит, спит, играет) и напоминает о необходимости размяться.
+* **Органайзер:** создание заметок с цветовой маркировкой и планирование событий с напоминаниями.
+* **Инструменты разработчика:** быстрый генератор случайных данных и JSON-структур, шифрование (AES, XOR, Base64) и хеширование (MD5, SHA-256 и др.).
+* **Быстрый доступ:** панель ярлыков для запуска внешних программ и файлов в один клик.
+* **Git-шпаргалка:** встроенный справочник по основным командам Git.
+
+### Стек технологий ₍^. ̫.^₎
+*   **Язык:** C++ (STL)
+*   **Фреймворк:** Qt (Widgets, QSS, QPropertyAnimation)
+*   **База данных:** SQLite (автоматическая инициализация таблиц при первом запуске)
+*   **Сборка:** CMake
+*   **Среда разработки:** Visual Studio 2022
+
+---
+
+### Как запустить •⩊•
+1. Скачайте готовый установщик из раздела **[Releases](https://github.com/fantadogxyz-lgtm/NekoCodex/releases)** *(будет добавлено позже)*.
+2. Запустите `NekoCodex_Installer.exe` и следуйте инструкциям мастера установки.
+
+*Для разработчиков:* исходный код находится в корне репозитория. Сборка производится через CMake (требуется установленный Qt).
+
+### Демонстрация работы ᨐฅ
+*(Здесь будет ссылка на видео-демонстрацию, когда ты её загрузишь на YouTube)*
 
 
+### 📄 Документация
+Полная пояснительная записка с ER-диаграммами и схемами алгоритмов доступна в файле **[docs/Report.pdf](docs/Report.pdf)** *(файл нужно будет загрузить в папку docs)*.
 
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-* [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-* [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.com/fantadogxyz/nekocodekaproghelper.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-* [Set up project integrations](https://gitlab.com/fantadogxyz/nekocodekaproghelper/-/settings/integrations)
-
-## Collaborate with your team
-
-* [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-* [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-* [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-* [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-* [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-* [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-* [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-* [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-* [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-* [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+---
+*Разработано в рамках учебного проекта.*
